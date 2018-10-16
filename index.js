@@ -41,7 +41,7 @@ client.on("guildMemberAdd", function(member) {
     "Développé par XeCrafT",
     "http://austelclient.net",
     " " + new Date(),
-     bot.users.size + " utilisateurs !"
+     client.users.size + " utilisateurs !"
  ]
   client.user.setActivity(setInterval(function() {
   client.user.setActivity(games[Math.floor(Math.random() * games.length)], {url:"https://www.twitch.tv/AustelBot", type: "STREAMING"})
@@ -56,7 +56,7 @@ client.on("guildMemberAdd", function(member) {
                 fields: [
                     {
                         name: member.displayName + " a rejoint ! :white_check_mark: ",
-                        value: 'Nous sommes désormais ' + bot.users.size + " utilisateurs !",
+                        value: 'Nous sommes désormais ' + client.users.size + " utilisateurs !",
                         inline: false
                    }],                     
                                    footer: {
@@ -73,7 +73,7 @@ client.on("guildMemberRemove", function(member) {
     "Développé par XeCrafT",
     "http://austelclient.net",
     " " + new Date(),
-     bot.users.size + " utilisateurs !"
+     client.users.size + " utilisateurs !"
  ]
   client.user.setActivity(setInterval(function() {
   client.user.setActivity(games[Math.floor(Math.random() * games.length)], {url:"https://www.twitch.tv/AustelBot", type: "STREAMING"})
@@ -88,7 +88,7 @@ client.on("guildMemberRemove", function(member) {
                 fields: [
                     {
                         name: member.displayName + " a quitté ! :x:",
-                        value: 'Nous sommes désormais ' + bot.users.size + " utilisateurs !",
+                        value: 'Nous sommes désormais ' + client.users.size + " utilisateurs !",
                         inline: false
                    }],                     
                                    footer: {
